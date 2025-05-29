@@ -364,6 +364,7 @@ export function Header({ userRole, userName }: HeaderProps) {
       {/* Mobile Title Bar */}
       <div className="md:hidden border-t px-4 py-2 bg-background/95">
         <h1 className="text-lg font-semibold ">{getPageTitle()}</h1>
+        {/* Test */}
         <p className="text-sm text-muted-foreground">
           {getGreeting()}, {userName}
         </p>
