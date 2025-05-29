@@ -179,10 +179,10 @@ export function Header({ userRole, userName }: HeaderProps) {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between px-4 bg-background/95">
         {/* Left Section */}
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-4 ">
           <SidebarTrigger />
-          <div className="hidden md:block">
-            <h1 className="text-xl font-semibold">{getPageTitle()}</h1>
+          <div className="hidden md:block bg-background/95">
+            <h1 className="text-xl font-semibold bg-background/95">{getPageTitle()}</h1>
             <p className="text-sm text-muted-foreground">
               {getGreeting()}, {userName} ({userRole === "admin" ? "Admin" : "Receptionist"})
             </p>
@@ -362,8 +362,8 @@ export function Header({ userRole, userName }: HeaderProps) {
       </div>
 
       {/* Mobile Title Bar */}
-      <div className="md:hidden border-t px-4 py-2">
-        <h1 className="text-lg font-semibold">{getPageTitle()}</h1>
+      <div className="md:hidden border-t px-4 py-2 bg-background/95">
+        <h1 className="text-lg font-semibold ">{getPageTitle()}</h1>
         <p className="text-sm text-muted-foreground">
           {getGreeting()}, {userName}
         </p>
